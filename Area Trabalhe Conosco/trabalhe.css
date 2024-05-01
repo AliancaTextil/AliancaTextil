@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+  background-image: url("../background.jpg");
+}
+
+
+
 /* Estilo para o cabeçalho */
 header {
     width: 100%;
@@ -8,8 +26,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 
 @keyframes rainbow {
@@ -74,148 +90,160 @@ header {
     transform: translateY(2px);
 }
 
-/* botao blobs*/
-button:hover {
-  transform: scale(1.1);
-}
-
-
-/* Estilos para a seção "Temos Vagas" */
-#vagas {
-  background-color: #f9f9f9;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Estilos para os contêineres de vaga */
-.vaga {
-  width: calc(33.33% - 20px); /* 33.33% para cada vaga */
-  margin: 0 10px 30px; /* Margem nas laterais e na parte inferior */
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-/* Estilos para a seção "Temos Vagas" com 3/3 contêineres */
-#vagas .container:nth-child(odd) .vaga {
-  width: calc(33.33% - 20px);
-}
-
-/* Estilos para a seção "Temos Vagas" com 3/3 contêineres */
-#vagas .container:nth-child(even) .vaga {
-  width: calc(33.33% - 20px);
-}
-
-/* Ajustes para colocar "Temos Vagas" no topo centralizado */
-#vagas {
+main.cards1 {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  padding: 32px;
 }
 
-/* Ajustes para os contêineres em duas colunas */
-@media (min-width: 768px) {
-  .container {
-      display: flex;
-      justify-content: space-between;
-  }
-
-  #vagas .container:nth-child(odd) .vaga,
-  #vagas .container:nth-child(even) .vaga {
-      width: calc(49% - 20px);
-      margin-bottom: 30px;
-  }
-}
-/* Estilos para os botões de participar */
-.participar-btn {
-  background-color: #4caf50; /* Cor verde */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Adicionando transição suave */
-}
-
-.participar-btn:hover {
-  background-color: #388e3c; /* Mudança de cor no hover */
-}
-
-/* Estilos para os contêineres de vaga */
-.vaga {
-  width: calc(33.33% - 20px); /* 33.33% para cada vaga */
-  margin: 0 10px 30px; /* Margem nas laterais e na parte inferior */
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  transition: transform 0.3s ease; /* Adicionando transição suave */
-}
-
-/* Estilos para a animação ao passar o mouse sobre os contêineres */
-.vaga:hover {
-  transform: scale(1.05); /* Aumentar em 5% ao passar o mouse */
-}
-
-
-/* Estilos para os contêineres de Missão, Valores e Visão */
-#missao-valores-visao {
-  background-color: #f9f9f9;
-  padding: 50px 0;
-}
-
-#missao-valores-visao .container {
-  max-width: 1200px;
-  margin: 0 auto;
+main.cards1 section.card {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.container-item {
-  width: calc(33.33% - 20px); /* 33.33% para cada contêiner */
-  margin: 0 10px 20px; /* Margem nas laterais e menos espaço inferior */
-  padding: 20px; /* Espaçamento interno uniforme */
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  transition: transform 0.3s ease; /* Adicionando transição suave */
-  display: flex; /* Adicionando para utilizar flexbox */
-  flex-direction: column; /* Ajustando a direção para coluna */
-  justify-content: space-between; /* Espaço entre os elementos */
-  height: 350px; /* Altura inicial dos contêineres */
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
 }
 
-.container-item h3 {
-  margin-top: 0; /* Remover margem superior padrão do título */
+main.cards1 section.card:first-child {
+  margin-left: 0;
 }
 
-.container-item p {
-  margin-top: 20px; /* Espaço entre o título e a descrição */
-  flex-grow: 1; /* Fazer a descrição ocupar o espaço restante */
+main.cards1 section.card .icon {
+  width: 64px;
+  height: 64px;
 }
 
-.container-item:hover {
-  transform: scale(1.05); /* Aumentar em 5% ao passar o mouse */
+main.cards1 section.card img {
+  width: 100%;
+}
+
+main.cards1 section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+main.cards1 section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+main.cards1 section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 16px 0;
+}
+
+main.cards1 section.card.contact button {
+  background: linear-gradient(to right, #09dd13, #0073df);
+}
+main.cards1 section.card.shop button {
+  background: linear-gradient(to right, #09dd13, #0073df);
+}
+main.cards1 section.card.about button {
+  background: linear-gradient(to right, #09dd13, #0073df);
 }
 
 
-.hidden {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+
+@media screen and (max-width: 720px) {
+  main.cards1 {
+      flex-direction: column;
+  }
+
+  main.cards1 section.card {
+      margin-left: 0;
+      margin-bottom: 32px;
+  }
+
+  main.cards1 section.card:last-child {
+      margin-bottom: 0;
+  }
+
+  main.cards1 section.card button {
+      font-size: 70%;
+  }
+
+}
+ 
+
+
+
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #000000;
+
 }
 
+.card {
+  width: 250px;
+  height: auto;
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid #000000; 
+  transition: all .3s ease-in;
+}
+.card > *{
+  padding: 10px;
+}
+.card .card-image{
+  height: 150px;
+  width: 150px;
+  border: 5px double #000000;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;    
+}
+.card .card-title{
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 2px #000000;
+}
+.card:nth-child(1) .card-image{
+  background-image: url(./images/laiza-embalagem.png);
+}
+.card:nth-child(2) .card-image{
+  background-image: url(./images/ProdutoAlianca.HEIC);
+}
+.card:nth-child(3) .card-image{
+  background-image: url(./images/romildoalien.jpg);
+}
+
+.card:hover{
+  background: #0000001f;
+  color: #000000;
+  box-shadow: 0px 0px 11px 5px #000000;
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+
+}
+
+.card .card-text{
+  line-height: 20px;
+  font-size: 400;
+}
 
 
 
