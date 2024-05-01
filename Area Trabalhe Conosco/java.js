@@ -18,3 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Verifica a visibilidade dos elementos ao carregar a página
 });
+
+ScrollReveal().reveal('.card', {
+    delay: 300, // Atraso de 300ms para iniciar a animação após o elemento ser revelado
+    distance: '50px', // Distância de deslocamento dos elementos
+    duration: 800, // Duração da animação em milissegundos
+    easing: 'ease', // Tipo de easing para a animação
+    interval: 200 // Atraso entre cada item quando houver múltiplos elementos
+  });
