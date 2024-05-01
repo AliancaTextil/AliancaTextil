@@ -54,14 +54,13 @@ nav ul li a:hover {
 /* Estilo para os slides */
 .slides {
 position: relative;
+height: 440px;
 width: 100%;
 text-align: center; /* Centralizar os slides */
 }
 
 .slide {
 position: absolute;
-top: 0;
-left: 0;
 width: 100%;
 opacity: 0; /* Começa invisível */
 transition: opacity 1s ease; /* Transição suave de opacidade */
@@ -73,15 +72,16 @@ opacity: 1; /* Torna-se visível */
 
 .slide img {
 width: 100%; /* 100% da largura da viewport */
-height: 450px; /* Altura fixa para formar um retângulo */
+height: 440px; /* Altura fixa para formar um retângulo */
 object-fit: cover; /* Mantém a proporção da imagem e corta o excesso para preencher */
 }
 /* Outros estilos conforme necessário */
 /* Estilo para o formulário */
 
 .sobre{  
+  border: solid hotpink;
   max-width: 1440px;
-  margin: 550px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -100,6 +100,9 @@ object-fit: cover; /* Mantém a proporção da imagem e corta o excesso para pre
   border-radius: 5px;
 }
 .catalogo{
+  margin: auto 0px;
+  border: solid hotpink;
+
   max-width: 1440px;
 
   display: flex;
@@ -107,6 +110,25 @@ object-fit: cover; /* Mantém a proporção da imagem e corta o excesso para pre
 }
 .catalogo div{
   width: 500px;
+}
+.catalogo button{
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #104086;
+  transition: .5s;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #0a2041;
+  }
+
 }
 .catalogo div h1{
   font-size: 1.8rem;
