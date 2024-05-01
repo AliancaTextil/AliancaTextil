@@ -1,3 +1,14 @@
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+  background-image: url("../background.jpg");
+}
+
+
+
 /* Estilo para o cabeçalho */
 header {
     width: 100%;
@@ -8,8 +19,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 
 @keyframes rainbow {
