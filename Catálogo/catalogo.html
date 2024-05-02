@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Cores</title>
+  <link rel="stylesheet" href="catalogocss.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Selecionar Cor</h2>
+      <div id="colorFilter">
+        <div class="color-option" data-color="all"><div class="color-indicator"></div>Todas as Cores</div>
+        <div class="color-option" data-color="red"><div class="color-indicator" style="background-color: red;"></div>Vermelho</div>
+        <div class="color-option" data-color="blue"><div class="color-indicator" style="background-color: blue;"></div>Azul</div>
+        <div class="color-option" data-color="green"><div class="color-indicator" style="background-color: green;"></div>Verde</div>
+      </div>
+    </div>
+    <div class="main-content" id="colorCatalog">
+      <div class="color-card red">Vermelho</div>
+      <div class="color-card blue">Azul</div>
+      <div class="color-card green">Verde</div>
+      <div class="color-card red">Vermelho Escuro</div>
+      <div class="color-card blue">Azul Claro</div>
+      <div class="color-card green">Verde Escuro</div>
+    </div>
+  </div>
+  <script src="catalogojs.js"></script>
+</body>
+</html>
